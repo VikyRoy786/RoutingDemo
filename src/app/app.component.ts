@@ -14,7 +14,28 @@ export class AppComponent {
   constructor (private route : Router){
     
   }
-  goPlaces() {
+  goHome(){
+    this.route.navigate(['/', 'home']);
+  }
+  goservice(){
+    this.route.navigate(['/', 'home']);
+  }
+  goAbout(){
+    this.route.navigate(['/', 'home']);
+  }
+  goContact() {
     this.route.navigate(['/', 'contact']);
+  }
+  goTempolate(){
+    this.route.navigate(['/', 'template']);
+  }
+  goTemplate2(){
+    this.route.navigate(['/', 'template2'])
+  }
+  gotoReactiveForm(){
+    this.route.navigate(['/', 'reactiveForm'])
+  }
+  gotoReactiveForm2(){
+    this.route.navigate(['/', 'reactiveForm2'])
   }
 }
